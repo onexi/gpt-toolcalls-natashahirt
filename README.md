@@ -21,5 +21,3 @@ Call function from LLM. This app is a weather assistant that can answer question
 To run this app, please first run `npm install express body-parser dotenv axios openai` in the root directory. I have included the .env file in the root directory, which contains the API keys for the OpenAI API, the the OpenWeatherMap API, and the OpenCage API, all of which are necessary to run the app. I understand this is not the best practice, but it will make running the app easier for you. 
 
 To run the app, please run `node src/server.js` in the root directory.
-
->>>>>>> origin/origin

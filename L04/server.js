@@ -16,7 +16,7 @@ app.use(express.static(path.resolve(process.cwd(), './public')));
 
 // OpenAI API configuration
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OPENAI_API_KEY || 'A6u7WDzJuaKDu3BwsTkcT3BlbkFJbKOkqDB6yZRoXL6OrquH',
 });
 let state = {
     chatgpt:false,
@@ -34,7 +34,7 @@ let state = {
   };
 // Default route to serve index.html for any undefined routes
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(process.cwd(), './public/index.html'));
+    res.sendFile(path.resolve(process.cwd(), 'L04/public/index.html'));
 });
 async function getFunctions() {
    
